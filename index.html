@@ -9,7 +9,122 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <h1>ポートフォリオサイト</h1>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+    <div class="intro">
+      <img src="img/profile.jpg" alt="profile" class="frame" />
+      <div class="profile">
+        <h2>自己紹介</h2>
+        <h3>
+          名前：
+          <ruby>加藤<rt>かとう</rt>優一<rt>ゆういち</rt></ruby>
+        </h3>
+        <h3>年齢：21歳</h3>
+        <h3>誕生日：1/22</h3>
+        <h3>出身：兵庫県芦屋市</h3>
+        <h3>大学：愛媛大学工学部</h3>
+      </div>
+    </div>
+    <hr />
+
+    <div align="center">
+      <div class="detail hobby">
+        <span>趣味</span><span>サッカー<br />音楽を聴く<br />体を動かす</span>
+      </div>
+      <div class="detail hobby">
+        <span>好きな歌手</span
+        ><span
+          >GReeeeN<img src="img/GReeeeN.jpg" alt="GReeeeN" class="frame1"
+        /></span>
+      </div>
+      <div class="detail hobby">
+        <span>好きな女優</span
+        ><span
+          >新垣結衣<img src="img/gakki.jpg" alt="ガッキー" class="frame1"
+        /></span>
+      </div>
+    </div>
+
+    <hr />
+    <br />
+    <h2>スライドショー</h2>
+    <br />
+    <div class="slider">
+      <img src="img/soccer.JPG" id="slide_img" class="picutue" />
+    </div>
+    <br />
+    <hr />
+    <br />
+    <h2>ゲーム</h2>
+    <br />
+    <div class="game">
+      <span class="msg">スライドパズル</span>
+    </div>
+    <br />
+    <div id="good" class="clear"></div>
+    <div class="start">
+      <input
+        type="button"
+        onClick="game_start()"
+        value="ゲーム開始"
+        class="btn"
+      />
+    </div>
+    <br />
+    <div class="puzzle">
+      <img name="im" onClick="slide(0)" src="img/puzzle0.jpg" /><img
+        name="im"
+        onClick="slide(1)"
+        src="img/puzzle1.jpg"
+      /><img name="im" onClick="slide(2)" src="img/puzzle2.jpg" /><img
+        name="im"
+        onClick="slide(3)"
+        src="img/puzzle3.jpg"
+      />
+      <br />
+      <img name="im" onClick="slide(4)" src="img/puzzle4.jpg" /><img
+        name="im"
+        onClick="slide(5)"
+        src="img/puzzle5.jpg"
+      /><img name="im" onClick="slide(6)" src="img/puzzle6.jpg" /><img
+        name="im"
+        onClick="slide(7)"
+        src="img/puzzle7.jpg"
+      />
+      <br />
+      <img name="im" onClick="slide(8)" src="img/puzzle8.jpg" /><img
+        name="im"
+        onClick="slide(9)"
+        src="img/puzzle9.jpg"
+      /><img name="im" onClick="slide(10)" src="img/puzzle10.jpg" /><img
+        name="im"
+        onClick="slide(11)"
+        src="img/puzzle11.jpg"
+      />
+      <br />
+      <img name="im" onClick="slide(12)" src="img/puzzle12.jpg" /><img
+        name="im"
+        onClick="slide(13)"
+        src="img/puzzle13.jpg"
+      /><img name="im" onClick="slide(14)" src="img/puzzle14.jpg" /><img
+        name="im"
+        onClick="slide(15)"
+        src="img/puzzle15.jpg"
+      />
+    </div>
+    <br />
     <script src="main.js"></script>
+
+    <footer>
+      <p>© 2021 YuichiKato, All Rights Reserved.</p>
+      <a href="https://www.instagram.com/yuichiki.0122/"
+        ><img src="img/Instagram.png" alt="インスタグラム"
+      /></a>
+      &ensp;
+      <a href="https://twitter.com/yuichi20010122"
+        ><img src="img/Twitter.png" alt="ツイッター"
+      /></a>
+    </footer>
   </body>
 </html>

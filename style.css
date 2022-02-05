@@ -1,0 +1,145 @@
+body {
+  background-color: ghostwhite;
+  font-family: serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #78e58c;
+  font-family: serif;
+}
+
+.intro {
+  display: flex;
+  margin: 50px 0px 50px 200px;
+}
+
+.frame {
+  padding: 10px;
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+}
+
+.profile {
+  margin: 10px 10px 10px 200px;
+}
+
+h2 {
+  border-bottom: 3px solid #78e58c;
+  width: 200px;
+}
+
+h2::first-letter {
+  font-size: 150%;
+}
+
+h3 {
+  margin: 20px 0px;
+}
+
+.detail {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  line-height: 100px;
+  text-align: center;
+  outline: none;
+  margin: 30px;
+}
+
+.detail span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #78e58c;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+
+.hobby span:nth-child(1) {
+  transform: rotateX(0deg);
+  transform-origin: 0 50% -25px;
+}
+
+.hobby:hover span:nth-child(1) {
+  transform: rotateX(90deg);
+}
+
+.hobby span:nth-child(2) {
+  transform: rotateX(-90deg);
+  transform-origin: 0 50% -25px;
+}
+
+.hobby:hover span:nth-child(2) {
+  transform: rotateX(0deg);
+}
+
+.frame1 {
+  border-radius: 50%;
+}
+
+.slider {
+  text-align: center;
+}
+
+.game {
+  text-align: center;
+}
+
+.msg {
+  font-size: 30px;
+  position: relative;
+  padding: 0.1em 0.5em;
+  background: -webkit-repeating-linear-gradient(to right, #78e58c, transparent);
+  background: linear-gradient(to right, #78e58c, transparent);
+  color: black;
+}
+
+.start {
+  text-align: center;
+}
+
+.clear {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(252, 32, 32);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8em 3em;
+  background-color: #78e58c;
+  box-shadow: 0 5px 0 #42dd5e;
+  border-radius: 30px;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translate(5px);
+}
+
+.puzzle {
+  line-height: 0;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #42dd5e;
+  color: #000000;
+  text-align: center;
+}
